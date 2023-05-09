@@ -133,6 +133,7 @@
         </div>
     </form>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -144,7 +145,7 @@
                 let producto_precio = $(this).data('producto_precio');
                 $('#EditModal').modal('show');
                 $('.producto_nombre').val(producto_nombre);
-                $('.precio').val(producto_precio);
+                $('.producto_precio').val(producto_precio);
                 $('.producto_id').val(producto_id);
             })
 
@@ -152,7 +153,7 @@
             $('#mytable').on('click', '.delete', function () {
                 let producto_id = $(this).data('id');
                 $('#DeleteModal').modal('show');
-                $('producto_id2').val(producto_id);
+                $('.producto_id2').val(producto_id);
 
             })
         })
